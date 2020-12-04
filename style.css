@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background: aqua;
+    font-family: sans-serif;
+}
+
+header {
+    /*background-image: url(examples/flower.JPG);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;    
+    background-color: aqua;*/
+    height: 110px;
+    border: black solid 5px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    background: url(http://lorempixel.com/1250/300/abstract) no-repeat;
+    position: sticky;
+    top: 10px;
+
+}
+
+li a {
+    text-decoration: none;
+}
+
+ul {
+        margin-left: -20px;
+
+}
+li{
+    color: blue;
+    display: inline-block;
+    text-align: center;
+    width:80px;
+    background-color:beige;
+}
+
+a:link {
+    color:red;
+}
+a:visited{
+    color:green;
+}
+li:hover{
+    color:pink;
+    background-color: yellow;
+    width: 120px;
+}
+a:active{
+    color:aqua;
+}
+
+h1 {
+    color: yellow;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+
+.section1 {
+    background-color: red;
+    border: black solid 5px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    padding:10px;
+}
+
+
+.section2 {
+    background-color: yellow;
+    border: black solid 5px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+
+.section3 {
+    background-color: green;
+    border: black solid 5px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+
+.section4 {
+    background-color: blue;
+    border: black solid 5px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#b1 {
+    width: 32%;
+    border: black solid 2px;
+    border-radius: 2%;
+    display: inline-block;
+    /*height: inherit;*/
+    text-align: justify;
+    float:left;
+    margin-right: 2%;
+}
+#b2 {
+    width: 32%;
+    border: black solid 2px;
+    border-radius: 2%;
+    display: inline-block;
+    /*height: 100%;*/
+    text-align: justify;
+    vertical-align: middle;
+}
+#b3 {
+    width: 32%;
+    border: black solid 2px;
+    border-radius: 2%;
+    display: inline-block;
+    /*height: 100%;*/
+    text-align: justify;
+    float:right;
+}
+span:nth-child(odd){
+    background-color: purple;
+}
+p {
+    color:chocolate;
+}
+
+span {
+    color:black;
+}
+
+div {
+    color:chartreuse;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+table{
+    width: 300px;
+}
+
+th {
+    background: red;
+    color: white;
+    border: 1px solid #000;
+
+}
+td {
+    border: 1px solid #ddd;
+
+}
+
+th, td{
+    text-align: center;
+    padding: 5px;
+
+}
+
+tr:nth-child(odd){
+    background-color: #000;
+    color: #fff;
+}
+
+tr:nth-child(even){
+    background-color: #bbb;
+    color:#fff;
+}

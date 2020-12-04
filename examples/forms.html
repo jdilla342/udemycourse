@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> Forms </title>
+    </head>
+
+    <body>
+        <form action="newPage.html" method="post"
+              >
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="userName" required placeholder="Type Name Here">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Type Email Here">
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="40" maxlength="50" required placeholder="Type Message Here"></textarea>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+        <br>
+        <br>
+        <form action="/serverpage.php" method="post">
+            <label for="userName">Name:</label>
+            <input type="text" name="userName" id="userName" placeholder="Your Name"><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <form action="" method="get">
+            <input type="color" name="color"><br>
+            <input type="date" name="date"><br>
+            <input type="number" name="number" min="10" max="50"><br>
+            <input type="url" name="url" required><br>
+            <input type="file" name="file"><br>
+            <input type="range" name="range" min="10" max="50"><br>
+            <input type="datetime-local" name="dtl"><br>
+
+            <input type="checkbox" name="checkbox1" value="checked" checked>
+            <input type="checkbox" name="checkbox2" value="checked off"><br>
+
+            <input type="radio" name="radioButton" value="one">
+            <input type="radio" name="radioButton" value="two">
+            <input type="radio" name="radioButton" value="three">
+            <input type="radio" name="radioButton" value="four"><br>
+
+            <input type="submit">
+
+
+            <br>
+            <hr>
+            <!-------------------------------->
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="userName" required placeholder="User Name"></div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required></div>
+            <div>
+                <select name="subject">
+                    <option value="Support">Support</option>
+                    <option value="Info" selected>Say Hello</option>
+                    <option value="Billing">Billing</option>
+
+                </select>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <label for="message">Message:</label> 
+                <textarea name="message" rows="4" cols="40" maxlength="40" placeholder="Message">The text goes here</textarea>
+            </div>
+            <div>what is your gender?
+                <br>
+                Male <input type="radio" name="gender" value="male">
+                Female <input type="radio" name="gender" value="female">
+                Other <input type="radio" name="gender" value="other">
+            </div>
+            <div>Do you agree? 
+                <input type="checkbox" name="TOS" value="yes">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+            <br>
+            <hr>
+            <!--------------------------------->
+            <br>
+            <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="firstName" name="firstName" required placeholder="First Name">
+                <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+            </div>
+            <div>
+
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required></div>
+            <div>
+                <label for="message">Message:</label>
+                <label for="message">Message:</label> 
+                <textarea name="message" rows="4" cols="40" maxlength="40" placeholder="Message">The text goes here</textarea>
+            </div>
+            <div>what is your gender?
+                <br>
+                Male <input type="radio" name="gender" value="male">
+                Female <input type="radio" name="gender" value="female">
+                Other <input type="radio" name="gender" value="other">
+            </div>
+        </form>
+        <br>
+        <hr>
+        <!------------------------------->
+        <br>
+        <form action="newPage.html" method="get">
+            <fieldset>
+                <legend>Required Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="userName" required placeholder="User Name">
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <select name="subject">
+                        <option value="Support">Support</option>
+                        <option value="Info" selected>Say Hello</option>
+                        <option value="Billing">Billing</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Message:</label> 
+                    <textarea name="message" rows="4" cols="40" maxlength="40" placeholder="Message">The text goes here</textarea>
+                </div>
+                <div>what is your gender?
+                    <br>
+                    Male <input type="radio" name="gender" value="male">
+                    Female <input type="radio" name="gender" value="female">
+                    Other <input type="radio" name="gender" value="other">
+                </div>
+                <div>Do you agree? 
+                    <input type="checkbox" name="TOS" value="yes">
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+        
+        <br>
+        <hr>
+        <!------------------------------->
+        <br>
+        <form action="newPage.html" method="get">
+            <fieldset>
+                <legend>Like HTML?</legend>
+                <input type="radio" name="like" value="yes" id="vote1"> 
+                <label for="vote1">Yes</label>
+                <input type="radio" name="like" value="no" idn="r2">
+                <label for="vote2">No</label>
+            </fieldset>
+            <div>
+                <label for="q1">How old are you?</label>
+                <input type="number" min="12" max="120" name="age" id="q1">
+            </div>
+            <div>
+                <label for="q2">What's your favourite fruit?</label>
+                <input type="text" id="q2" name="fav" list="list1">
+                <datalist id="list1">
+                    <option>Banana</option>
+                    <option>Cherry</option>
+                    <option>Apple</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="email">Whats your e-mail?</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Leave a message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        
+        
+        </form>
+
+    </body>
+</html>
